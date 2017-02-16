@@ -59,6 +59,12 @@ app.get('/about', (request, response) => {
 	});
 });
 
+app.get('/projects', (request, response) => {
+	response.render('projects.hbs', {
+		pageTitle: 'Proyectos',
+	});
+});
+
 // /bad - enviar en formato json con un mensaje de error.
 
 app.get('/bad', (request, response) => {
